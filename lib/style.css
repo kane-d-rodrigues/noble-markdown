@@ -1,0 +1,201 @@
+/*the font of choice = dm mono*/
+.dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    text-align: center;
+    border: 0px solid snow;
+}
+
+.nav-above ul {
+    list-style-type: none;
+    padding: 0px;
+    border: 2px solid snow;
+    border-top: 1px solid #2b2b2c;
+    border-left: 1px solid #2b2b2c;
+    border-right: 1px solid #2b2b2c;
+    border-radius: 7px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.nav-above a {
+    font-family: "dm mono";
+    color: snow;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav-above a:hover {
+    color: lightslategray;
+    cursor: pointer;
+}
+
+.nav-above li{
+    float: right;
+}
+
+h1 {
+    font-family: "dm mono";
+    font-size: 60px;
+    text-align: center;
+    color: snow;
+    line-height: 1;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "dm mono";
+    font-size: 40px;
+    text-align: center;
+    color: snow;
+    line-height: 1;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "dm mono";
+    font-size: 40px;
+    text-align: center;
+    color: snow;
+    line-height: 1;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "dm mono";
+    font-size: 30px;
+    text-align: center;
+    color: snow;
+    line-height: 1;
+    font-weight: 500;
+}
+
+p {
+    font-family: "dm mono";
+    color: snow;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.explanationtag {
+    color: grey;
+    font-style: italic;
+}
+
+body {
+    background-color:#32302f;
+    color: snow;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "dm mono";
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-size: 18px;
+}
+
+.pineapple {
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+}
+
+.pineapple-1, .pineapple-2 {
+    width: auto;
+}
+
+.purposediv {
+    width: 90%;
+    border: 2px solid snow;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.blurbs {
+    color: snow;
+    text-align: right;
+    width: 97%;
+}
+
+.button {
+    font-family: "dm mono";
+    font-size: 15px;
+    width: 130px;
+    border: 2px solid snow;
+    padding: 7px;
+    margin: 8px 0;
+    letter-spacing: -0.20px;
+    color: snow;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: lightslategray;
+    border-color: lightslategray;
+    cursor: pointer;
+
+}
+
+hr {
+    width: 40%;
+    border: 1px solid snow;
+}
+
+label {
+    font-size: 17px;
+    font-family: "dm mono";
+}
+
+footer {
+    font-family: "dm mono";
+    color: snow;
+    text-align: center;
+}
+
+.nav-below ul {
+    list-style-type: none;
+    background-color: #32302f;
+    padding: 0px;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 300;
+}
+  
+.nav-below a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+  
+.nav-below a:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.repo-name {
+    font-size: 15px;
+    font-style: italic;
+}
