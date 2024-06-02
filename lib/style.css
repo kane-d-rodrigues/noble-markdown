@@ -1,19 +1,28 @@
-/*the font of choice = dm mono*/
-.dm-mono-regular {
-    font-family: "DM Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
+/*the font choice for paragraphs and small text*/
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*the font choice for headings and big text*/
+.dm-sans-font {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
     text-align: center;
-    border: 0px solid snow;
+    border: 0px solid;
 }
 
 .nav-above ul {
     list-style-type: none;
     padding: 0px;
-    border: 2px solid snow;
+    border: 2px solid #76fda8;
     border-top: 1px solid #2b2b2c;
     border-left: 1px solid #2b2b2c;
     border-right: 1px solid #2b2b2c;
@@ -23,19 +32,21 @@ header {
 }
 
 .nav-above a {
-    font-family: "dm mono";
-    color: snow;
+    font-family: "raleway";
+    color: #76fda8;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+    border-radius: 10px;
 }
 
 .nav-above a:hover {
-    color: lightslategray;
+    color: #99f;
     cursor: pointer;
+    background: linear-gradient(#1d2021, #2b2b2c);
 }
 
 .nav-above li{
@@ -43,7 +54,7 @@ header {
 }
 
 h1 {
-    font-family: "dm mono";
+    font-family: "dm sans";
     font-size: 60px;
     text-align: center;
     color: snow;
@@ -52,7 +63,7 @@ h1 {
 }
 
 h2 {
-    font-family: "dm mono";
+    font-family: "dm sans";
     font-size: 40px;
     text-align: center;
     color: snow;
@@ -61,8 +72,8 @@ h2 {
 }
 
 h3 {
-    font-family: "dm mono";
-    font-size: 40px;
+    font-family: "dm sans";
+    font-size: 35px;
     text-align: center;
     color: snow;
     line-height: 1;
@@ -70,34 +81,34 @@ h3 {
 }
 
 h4 {
-    font-family: "dm mono";
+    font-family: "dm sans";
     font-size: 30px;
     text-align: center;
-    color: snow;
+    color: #76fda8;
     line-height: 1;
     font-weight: 500;
 }
 
 p {
-    font-family: "dm mono";
-    color: snow;
+    font-family: "raleway";
+    color: azure;
     text-align: center;
     font-size: 16px;
     font-weight: 300;
 }
 
 .explanationtag {
-    color: grey;
+    color: #99f;
     font-style: italic;
 }
 
 body {
-    background-color:#32302f;
-    color: snow;
+    background-color:#1d2021;
+    color: azure;
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-    font-family: "dm mono";
+    font-family: "raleway";
 }
 
 div {
@@ -123,29 +134,29 @@ div {
 
 .purposediv {
     width: 90%;
-    border: 2px solid snow;
+    border: 2px solid #76fda8;
     border-radius: 5px;
     overflow: hidden;
     display: inline-flex;
 }
 
 .blurbs {
-    color: snow;
     text-align: right;
     width: 97%;
 }
 
 .button {
-    font-family: "dm mono";
+    font-family: "raleway";
     font-size: 15px;
     width: 130px;
-    border: 2px solid snow;
+    border: 2px solid #76fda8;
     padding: 7px;
     margin: 8px 0;
     letter-spacing: -0.20px;
-    color: snow;
+    color: #76fda8;
     border-radius: 7px;
     cursor: pointer;
+    background-color: #1d2021;
 }
 
 .button:hover {
@@ -155,27 +166,37 @@ div {
 
 }
 
+a {
+    color: #76fda8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #99f;
+    border-color: #99f;
+}
+
 hr {
     width: 40%;
-    border: 1px solid snow;
+    border: 1px solid #76fda8;
 }
 
 label {
     font-size: 17px;
-    font-family: "dm mono";
+    font-family: "raleway";
 }
 
 footer {
-    font-family: "dm mono";
-    color: snow;
+    font-family: "raleway";
+    color: #76fda8;
     text-align: center;
 }
 
 .nav-below ul {
     list-style-type: none;
-    background-color: #32302f;
+    background-color: #1d2021;
     padding: 0px;
-    border: 1px solid white;
+    border: 1px solid #76fda8;
     border-radius: 7px;
     margin: 0px;
     overflow: hidden;
@@ -184,18 +205,21 @@ footer {
 }
   
 .nav-below a {
+    color: #76fda8;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
 }
-  
+
 .nav-below a:hover {
-    color: aqua;
+    color: #99f;
     cursor: pointer;
+    background-color: #2b2b2c;
 }
 
 .repo-name {
     font-size: 15px;
     font-style: italic;
+    color: #99f;
 }
