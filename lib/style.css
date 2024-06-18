@@ -102,6 +102,18 @@ p {
     font-style: italic;
 }
 
+.clickableimage {
+    width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 1px solid #76fda8;
+}
+
+.clickableimage:hover {
+    cursor: pointer;
+    border: 2px solid #ff7276;
+}
+
 body {
     background-color:#1d2021;
     color: azure;
