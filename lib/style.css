@@ -135,12 +135,13 @@ div {
     text-align: center;
     margin: auto;
     width: 90%;
-    overflow: hidden;
+    overflow-y: scroll;
     display: inline-flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.pineapple-1, .pineapple-2 {
+.pineapple-1 {
     width: auto;
 }
 
