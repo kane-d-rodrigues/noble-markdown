@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+    <head>
+        <!--Title-->
+        <title>[coursename] - nobleMarkdown</title>
+
+        <!--Linking CSS-->
+        <link rel="stylesheet" href="lib/style.css">
+
+        <!--Linking Javascript-->
+        <script src="lib/javafunctions.js"></script>
+
+        <!--Linking Vue-->
+        <script src="https://unpkg.com/vue@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+
+        <!--Linking Font Choice-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="brython(1)">
+        <nav class="nav-above">
+            <ul>
+                <li style="float: left;"><a href="index.html">nobleMarkdown</a></li>
+
+                <li><a href="usefultools.html">Useful Tools and Resources</a></li>
+                <li><a href="toreview.html">To Review</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <!--Banner-->
+        <img src="lib/lightslategreyimg.jpg" style="height: 20vh; width: 150vh;">
+
+        <header>
+            <h1>coursename</h1>
+            <p class="explanationtag">coursedesc</p>
+        </header>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Footer-->
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <a href="index.html"><h3>nobleMarkdown</h3></a>
+                    <a href="#">About Statement</a>
+                    <a href="#">Suggestions</a>
+                    <a href="#">Help/Contact</a>
+                    <a href="#">Future Updates</a>
+                </div>
+
+                <div class="footer-heading footer-2">
+                    <a href="courses.html"><h3>Courses</h3></a>
+                    <a href="#">Explore</a>
+                    <a href="#">Current Subjects</a>
+                    <a href="#">Previous Subjects</a>
+                    <a href="#">Requirements</a>
+                </div>
+
+                <div class="footer-heading footer-3">
+                    <a href="toreview.html"><h3>To Review</h3></a>
+                    <a href="#">Braindump</a>
+                    <a href="#">Saved Courses</a>
+                    <a href="#">Saved Topics</a>
+                    <a href="#">Saved Links</a>
+                </div>
+
+                <div class="footer-heading footer-4">
+                    <a href="usefultools.html"><h3>Useful Tools and Resources</h3></a>
+                    <a href="#">Clock</a>
+                    <a href="#">Email Templates</a>
+                    <a href="#">Colour Comparison</a>
+                    <a href="#">Random Colour Generator</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Branding Indicator-->
+        <p class="repo-name">nobleMarkdown (From 2024-present)</p>
+    </body>
+
+    <script type="text/python">
+    from browser import window
+    from browser import ajax
+    import json
+    import urllib.request
+
+    app = window.Vue.new({
+        'el': '#accy130-app',
+        'data': {
+            'page' : 1,
+        },
+    })
+    </script>
+</html>

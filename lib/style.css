@@ -1,17 +1,17 @@
 /*the font choice for paragraphs and small text*/
-.raleway-font {
-  font-family: "Raleway", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.jost-font {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*the font choice for headings and big text*/
-.dm-sans-font {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.outfit-font {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -32,21 +32,21 @@ header {
 }
 
 .nav-above a {
-    font-family: "raleway";
+    font-family: "jost";
     color: #76fda8;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     border-radius: 10px;
 }
 
 .nav-above a:hover {
-    color: #99f;
+    color: #9999ff;
     cursor: pointer;
-    background: linear-gradient(#1d2021, #2b2b2c);
+    transition: 0.2s ease-out;
 }
 
 .nav-above li{
@@ -54,7 +54,7 @@ header {
 }
 
 h1 {
-    font-family: "dm sans";
+    font-family: "outfit";
     font-size: 60px;
     text-align: center;
     color: snow;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-    font-family: "dm sans";
+    font-family: "outfit";
     font-size: 40px;
     text-align: center;
     color: snow;
@@ -72,8 +72,8 @@ h2 {
 }
 
 h3 {
-    font-family: "dm sans";
-    font-size: 35px;
+    font-family: "outfit";
+    font-size: 20px;
     text-align: center;
     color: snow;
     line-height: 1;
@@ -81,19 +81,30 @@ h3 {
 }
 
 h4 {
-    font-family: "dm sans";
-    font-size: 30px;
+    font-family: "outfit";
+    font-size: 15px;
     text-align: center;
     color: #76fda8;
     line-height: 1;
     font-weight: 500;
 }
 
+a {
+    color: #76fda8;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover {
+    color: #99f;
+    transition: 0.2s ease-out;
+}
+
 p {
-    font-family: "raleway";
+    font-family: "jost";
     color: azure;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -120,29 +131,39 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-    font-family: "raleway";
+    font-family: "jost";
 }
 
 div {
     text-align: center;
     margin: auto;
-    width: 100%;
     font-size: 18px;
 }
 
-.pineapple {
+.course-selection {
     border-radius: 5px;
     text-align: center;
     margin: auto;
     width: 90%;
+    height: 40vh;
     overflow-y: scroll;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.pineapple-1 {
-    width: auto;
+.course-display {
+    width: 80%;
+    border: 2px solid #76fda8;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.course-display:hover {
+    background: linear-gradient(#212122, #434343);
+}
+
+.course-desc {
+    text-align: center;
 }
 
 .taleft {
@@ -166,11 +187,10 @@ div {
 
 .blurbs {
     text-align: right;
-    width: 97%;
 }
 
 .button {
-    font-family: "raleway";
+    font-family: "jost";
     font-size: 15px;
     width: 130px;
     border: 2px solid #76fda8;
@@ -190,16 +210,6 @@ div {
 
 }
 
-a {
-    color: #76fda8;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #99f;
-    border-color: #99f;
-}
-
 hr {
     width: 40%;
     border: 1px solid #76fda8;
@@ -207,43 +217,42 @@ hr {
 
 label {
     font-size: 17px;
-    font-family: "raleway";
+    font-family: "jost";
 }
 
-footer {
-    font-family: "raleway";
-    color: #76fda8;
-    text-align: center;
+.footer-container {
+    padding-bottom: 4rem;
 }
 
-.nav-below ul {
-    list-style-type: none;
-    background-color: #1d2021;
-    padding: 0px;
+.footer {
     border: 1px solid #76fda8;
-    border-radius: 7px;
-    margin: 0px;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 300;
+    width: auto;
+    height: 30vh;
+    color: #bf8281;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
 }
 
-.nav-below a {
-    color: #76fda8;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+.footer-heading {
+    display: flex;
+    flex-direction: column;
 }
 
-.nav-below a:hover {
+.footer-heading a {
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading h3:hover {
     color: #99f;
-    cursor: pointer;
-    background: linear-gradient(#1d2021, #2b2b2c);
+    transition: 0.2s ease-out;
 }
 
 .repo-name {
     font-size: 15px;
     font-style: italic;
     color: #99f;
+    margin: -45px;
 }

@@ -1,16 +1,30 @@
 <!doctype html>
 
 <html>
-  <head>
-    <title>Home Page - nobleMarkdown</title>
-    <link rel="stylesheet" href="lib/style.css">
-    <script src="lib/javafunctions.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway&display=swap" rel="stylesheet">
+    <head>
+        <!--Title-->
+        <title>ACCY 130 - nobleMarkdown</title>
+
+        <!--Linking CSS-->
+        <link rel="stylesheet" href="lib/style.css">
+
+        <!--Linking Javascript-->
+        <script src="lib/javafunctions.js"></script>
+
+        <!--Linking Vue-->
+        <script src="https://unpkg.com/vue@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
+
+        <!--Linking Font Choice-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    </head>
   </head>
 
-  <body>
+  <body onload="brython(1)">
+    <!--Navigation Bar-->
     <nav class="nav-above">
         <ul>
             <li style="float: left;"><a href="index.html">nobleMarkdown</a></li>
@@ -22,8 +36,11 @@
     </nav>
 
     <br>
-    <p>insert image here</p>
 
+    <!--Banner-->
+    <img src="lib/lightslategreyimg.jpg" style="height: 20vh; width: 150vh;">
+
+    <!--Header and Explanation of Page-->
     <header>
         <h1>nobleMarkdown</h1>
         <p class="explanationtag">This is the notes database for classes I have taken</p>
@@ -33,10 +50,11 @@
     <br>
     <br>
 
+    <!--Latest Page (fun feature)-->
     <div>
         <img src="lib/99fwater.png" class="clickableimage" onclick="imageredirection()">
         <h2>Latest Page</h2>
-        <hr><br><br>
+        <hr><br>
         <p>The latest addition to this website is the Useful Tools and Resources page.</p>
         <p>Although it was already established, it now has accessible content!</p>
     </div>
@@ -45,13 +63,14 @@
     <br>
     <br>
 
+    <!--Purpose of Website-->
     <div class="purposediv">
         <div class=".purposedivchild-1">
             <h2>Purpose</h2>
         </div>
 
         <div class=".purposedivchild-2">
-            <p class="blurbs">I just wanted to access every single lesson of the course in one HTML page rather than CTRL F'ing through multiple subjects.</p>
+            <p class="blurbs">I wanted to access every single lesson of the course in one HTML page; <br> (rather than CTRL F'ing through multiple subjects)</p>
         </div>
     </div>
 
@@ -59,16 +78,44 @@
     <br>
     <br>
 
-    <footer>
-        <nav class="nav-below">
-            <ul>
-                <li><a href="index.html">nobleMarkdown</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="toreview.html">To Review</a></li>
-                <li><a href="usefultools.html">Useful Tools and Resources</a></li>
-            </ul>
-        </nav>
-        <p class="repo-name">nobleMarkdown (From 2024-present)</p>
-    </footer>
+    <!--Footer-->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <a href="index.html"><h3>nobleMarkdown</h3></a>
+                <a href="#">About Statement</a>
+                <a href="#">Suggestions</a>
+                <a href="#">Help/Contact</a>
+                <a href="#">Future Updates</a>
+            </div>
+
+            <div class="footer-heading footer-2">
+                <a href="courses.html"><h3>Courses</h3></a>
+                <a href="#">Explore</a>
+                <a href="#">Current Subjects</a>
+                <a href="#">Previous Subjects</a>
+                <a href="#">Requirements</a>
+            </div>
+
+            <div class="footer-heading footer-3">
+                <a href="toreview.html"><h3>To Review</h3></a>
+                <a href="#">Braindump</a>
+                <a href="#">Saved Courses</a>
+                <a href="#">Saved Topics</a>
+                <a href="#">Saved Links</a>
+            </div>
+
+            <div class="footer-heading footer-4">
+                <a href="usefultools.html"><h3>Useful Tools and Resources</h3></a>
+                <a href="#">Clock</a>
+                <a href="#">Email Templates</a>
+                <a href="#">Colour Comparison</a>
+                <a href="#">Random Colour Generator</a>
+            </div>
+        </div>
+    </div>
+    
+            <!--Branding Indicator-->
+            <p class="repo-name">nobleMarkdown (From 2024-present)</p>
   </body>
 </html>
