@@ -168,6 +168,20 @@ div {
     text-align: center;
 }
 
+.course-display-invalid {
+    width: 80%;
+    border: 1px solid #ff7900;
+    border-radius: 0px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.course-display-invalid:hover {
+    transition: 0.1s ease-out;
+    border: 1.5px solid #e3242b;
+    cursor: pointer;
+}
+
 .taleft {
     text-align: left;
 }
