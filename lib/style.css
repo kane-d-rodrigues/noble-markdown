@@ -96,8 +96,9 @@ a {
 }
 
 a:hover {
-    color: #99f;
+    color: #9999ff;
     transition: 0.2s ease-out;
+    cursor: pointer;
 }
 
 p {
@@ -109,7 +110,7 @@ p {
 }
 
 .explanationtag {
-    color: #99f;
+    color: #9999ff;
     font-style: italic;
 }
 
@@ -141,7 +142,6 @@ div {
 }
 
 .course-selection {
-    border-radius: 5px;
     text-align: center;
     margin: auto;
     width: 90%;
@@ -152,14 +152,16 @@ div {
 
 .course-display {
     width: 80%;
-    border: 2px solid #76fda8;
-    border-radius: 5px;
+    border: 1px solid #76fda8;
+    border-radius: 0px;
     overflow: hidden;
     display: inline-flex;
 }
 
 .course-display:hover {
-    background: linear-gradient(#212122, #434343);
+    transition: 0.1s ease-out;
+    border: 1.5px solid #9999ff;
+    cursor: pointer;
 }
 
 .course-desc {
@@ -179,8 +181,8 @@ div {
 
 .purposediv {
     width: 90%;
-    border: 2px solid #76fda8;
-    border-radius: 5px;
+    border: 1px solid #76fda8;
+    border-radius: 0px;
     overflow: hidden;
     display: inline-flex;
 }
@@ -246,13 +248,52 @@ label {
 }
 
 .footer-heading h3:hover {
-    color: #99f;
+    color: #9999ff;
     transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.courseinone-container {
+    padding-bottom: 4rem;
+}
+
+.courseinone {
+    border: 1px solid #76fda8;
+    width: auto;
+    height: 30vh;
+    color: #bf8281;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+    overflow-x: auto;    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+}
+
+.courseinone-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.courseinone-heading a {
+    margin-bottom: 0.5rem;
+}
+
+.courseinone-heading h3:hover {
+    color: #9999ff;
+}
+
+[v-cloak] {
+    display: none;
+}
+  
+[v-cloak].v-show {
+    display: block;
 }
 
 .repo-name {
     font-size: 15px;
     font-style: italic;
-    color: #99f;
+    color: #9999ff;
     margin: -45px;
 }

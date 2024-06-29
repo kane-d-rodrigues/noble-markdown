@@ -3,7 +3,7 @@
 <html>
     <head>
         <!--Title-->
-        <title>ACCY 130 - nobleMarkdown</title>
+        <title>coursename - nobleMarkdown</title>
 
         <!--Linking CSS-->
         <link rel="stylesheet" href="lib/style.css">
@@ -23,7 +23,7 @@
     </head>
 
     <body onload="brython(1)">
-        <div id="accy130-app">
+        <div id="courseid-app">
             <nav class="nav-above">
                 <ul>
                     <li style="float: left;"><a href="index.html">nobleMarkdown</a></li>
@@ -40,8 +40,8 @@
             <img src="lib/lightslategreyimg.jpg" style="height: 20vh; width: 150vh;">
 
             <header>
-                <h1>ACCY 130</h1>
-                <p class="explanationtag">Accounting for Accountability and Decision Making</p>
+                <h1>coursename</h1>
+                <p class="explanationtag">course description</p>
             </header>
 
             <br>
@@ -52,19 +52,19 @@
             <div class="courseinone-container">
                 <div class="courseinone">
                     <div class="courseinone-heading week-1">
-                        <h3>Week 1</h3>
-                        <a @click="wk1section = !wk1section">Trying Week 1</a>
-                        <a href="#">insert text here</a>
-                        <a href="#">insert text here</a>
-                        <a href="#">insert text here</a>
+                        <a><h3>Week 1</h3></a>
+                        <a @click="firstweeklink1 = !firstweeklink1">First Link</a>
+                        <a @click="firstweeklink2 = !firstweeklink2">Second Link</a>
+                        <a @click="firstweeklink3 = !firstweeklink3">Third Link</a>
+                        <a @click="firstweeklink4 = !firstweeklink4">Fourth Link</a>
                     </div>
 
                     <div class="courseinone-heading week-2">
-                        <h3>Week 2</h3>
-                        <a href="#">insert text here</a>
-                        <a href="#">insert text here</a>
-                        <a href="#">insert text here</a>
-                        <a href="#">insert text here</a>
+                        <a><h3>Week 2</h3></a>
+                        <a @click="secondweeklink1 = !secondweeklink1">First Link</a>
+                        <a @click="secondweeklink2 = !secondweeklink2">Second Link</a>
+                        <a @click="secondweeklink3 = !secondweeklink3">Third Link</a>
+                        <a @click="secondweeklink4 = !secondweeklink4">Fourth Link</a>
                     </div>
 
                     <div class="courseinone-heading week-3">
@@ -149,9 +149,54 @@
                 </div>
             </div>
 
-            <div v-if="!wk1section">
-                <p>this is a sentence</p>
+            <div v-cloak v-show="firstweeklink1">
+                <p>this is where the first section would go</p>
+                <br>
+                <br>
             </div>
+
+            <div v-cloak v-show="firstweeklink2">
+                <p>this is where the second section would go</p>
+                <br>
+                <br>
+            </div>
+
+            <div v-cloak v-show="firstweeklink3">
+                <p>this is where the third section would go</p>
+                <br>
+                <br>
+            </div>
+
+            <div v-cloak v-show="firstweeklink4">
+                <p>this is where the fourth section would go</p>
+                <br>
+                <br>    
+            </div>
+
+            <div v-cloak v-show="secondweeklink1">
+                <p>this is where the first section would go</p>
+                <br>
+                <br>
+            </div>
+
+            <div v-cloak v-show="secondweeklink2">
+                <p>this is where the second section would go</p>
+                <br>
+                <br>
+            </div>
+
+            <div v-cloak v-show="secondweeklink3">
+                <p>this is where the third section would go</p>
+                <br>
+                <br>
+            </div>
+
+            <div v-cloak v-show="secondweeklink4">
+                <p>this is where the fourth section would go</p>
+                <br>
+                <br>    
+            </div>
+
             <br>
             <br>
 
@@ -204,9 +249,17 @@
     import urllib.request
 
     app = window.Vue.new({
-        'el': '#accy130-app',
+        'el': '#courseid-app',
         'data': {
-            'wk1section' : True,
+            'firstweeklink1' : False,
+            'firstweeklink2' : False,
+            'firstweeklink3' : False,
+            'firstweeklink4' : False,
+
+            'secondweeklink1' : False,
+            'secondweeklink2' : False,
+            'secondweeklink3' : False,
+            'secondweeklink4' : False,
         },
     })
     </script>
