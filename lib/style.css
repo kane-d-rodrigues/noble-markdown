@@ -249,7 +249,7 @@ label {
 
 .footer-heading h3:hover {
     color: #9999ff;
-    transition: 0.2s ease-out;
+    transition: 0.1s ease-out;
     cursor: pointer;
 }
 
@@ -281,6 +281,7 @@ label {
 
 .courseinone-heading h3:hover {
     color: #9999ff;
+    transition: 0.2s ease-in;
 }
 
 [v-cloak] {
