@@ -26,7 +26,7 @@ header {
     border-top: 1px solid #2b2b2c;
     border-left: 1px solid #2b2b2c;
     border-right: 1px solid #2b2b2c;
-    border-radius: 7px;
+    border-radius: 3px;
     margin: 0px;
     overflow: hidden;
 }
@@ -40,7 +40,6 @@ header {
     text-align: center;
     font-size: 15px;
     font-weight: 300;
-    border-radius: 10px;
 }
 
 .nav-above a:hover {
@@ -251,6 +250,10 @@ li {
 
 b {
     color: aqua;
+}
+
+th {
+    font-size: 15px;
 }
 
 td {
