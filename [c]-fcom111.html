@@ -53,10 +53,12 @@
                 <div class="courseinone">
                     <div class="courseinone-heading week-1">
                         <a @click="firstweekresources = !firstweekresources"><h3>Week 1</h3></a>
-                        <a @click="firstweeklink1 = !firstweeklink1">First Link</a>
-                        <a @click="firstweeklink2 = !firstweeklink2">Second Link</a>
-                        <a @click="firstweeklink3 = !firstweeklink3">Third Link</a>
+                        <a @click="firstweeklink1 = !firstweeklink1">What is FCOM 111?</a>
+                        <a @click="firstweeklink2 = !firstweeklink2">Course Structure</a>
+                        <a @click="firstweeklink3 = !firstweeklink3">Critical Thinking + Writing</a>
                         <a @click="firstweeklink4 = !firstweeklink4">Fourth Link</a>
+                        <a @click="">Fifth Link</a>
+                        <a @click="">Sixth Link</a>
                     </div>
 
                     <div class="courseinone-heading week-2">
@@ -151,20 +153,378 @@
 
             <!--Week 1 Start-->
             <div v-cloak v-show="firstweeklink1">
-                <p>this is where the first section would go</p>
-                <br>
+                <h2>What is FCOM 111?</h2>
+                <p>Basically a civics course that teaches you about government and how to think about how we organise our society.</p>
+                <p>This course sets the context for the BCom degree, acquainting students with the legal and governmental environment that NZ firms operate in.</p>
+                <p>FCOM stands for 'Faculty of Commerce'.</p>
                 <br>
             </div>
 
             <div v-cloak v-show="firstweeklink2">
-                <p>this is where the second section would go</p>
+                <h2>Course Structure</h2>
+                <div class="showcase-div">
+                    <div>
+                        <h3>Overall</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>2 lectures each week (Tuesday and Thursday at 10am)</li>
+                            <li>1 lecture theatre live streamed - initially at least</li>
+                            <li>Slides available on Nuku before the lecture</li>
+                            <li>No pre-recorded version on Nuku</li>
+                            <li>A tutorial most weeks (default is Face to Face)</li>
+                            <li>Starts with Government, then shifts to Law after mid tri break</li>
+                            <li>A detailed structure can be found on the Course Schedule (on Nuku)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Workload</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Expect around 150 hours in the trimester</li>
+                            <li>Preparation for lectures, tutorials, and assessments is expected</li>
+                            <li>That is an estimated 12.5 hours a week</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Tutorials</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Sign up using MyAllocator</li>
+                            <li>Tutorials start Week 2</li>
+                            <li>Tutorial participation is worth 10% of the final grade</li>
+                            <li>The default attendance is in person</li>
+                            <li>Catch up sessions are available via Zoom</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Readings</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>The main reading is "Democracy in Aotearoa New Zealand"</li>
+                            <li>Additional readings are found in the Course Schedule (on Nuku)</li>
+                            <li>Other resources are also marked "Extra for Experts"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Nuku</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Nuku is the home page for this course</li>
+                            <li>It holds assessment info, lecture slides, readings, and tutorial questions</li>
+                        </ul>
+                        <ul>
+                            <li><b>Admin</b></li>
+                            <li>Check Discussions (on Nuku) to see if anyone has asked your question</li>
+                            <li>If not then email: <a href="mailto:fcom111@vuw.ac.nz">fcom111@vuw.ac.nz</a></li>
+
+                            <br>
+
+                            <li><b>Content</b></li>
+                            <li>Ask your tutor</li>
+                            <li>If necessary, the query will be passed to the lecturers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Additional Sources</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Follow NZ politics in the media</li>
+                            <li>Focus especially on Democracy Project links</li>
+                            <li>"Extra for Experts" includes additional sources</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <h2>Assessments</h2>
+                <div class="showcase-div">
+                    <div>
+                        <h3>Grading Weight</h3>
+                    </div>
+                    
+                    <div>
+                        <table>
+                            <tr>
+                                <th>10%</th>
+                                <td> - </td>
+                                <td>Essay Paragraphs <br> Writing Task</td>
+                            </tr>
+
+                            <tr>
+                                <th>25%</th>
+                                <td> - </td>
+                                <td>Essay</td>
+                            </tr>
+
+                            <tr>
+                                <th>25%</th>
+                                <td> - </td>
+                                <td>Legal Test</td>
+                            </tr>
+
+                            <tr>
+                                <th>30%</th>
+                                <td> - </td>
+                                <td>Final Test</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>10%</th>
+                                <td> - </td>
+                                <td>Tutorial Participation</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Essay Paragraphs Writing Task</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>2 paragraphs required (max 400 words)</li>
+                            <li>Worth 10%</li>
+                            <li>Submitted electronically using Turnitin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Essay</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Write an essay building on the 2 paragraphs already written</li>
+                            <li>Max 1,500 words (excluding references)</li>
+                            <li>Worth 25%</li>
+                            <li>Submitted electronically using Turnitin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Legal Test</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>25 Multiple Choice Questions in 1 hour</li>
+                            <li>Worth 25%</li>
+                            <li>Online via Nuku</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Final Test</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>3 hours given</li>
+                            <li>10 Multiple Choice Questions</li>
+                            <li>10 Short Answer Questions</li>
+                            <li>1,000 word Essay</li>
+                            <li>Worth 30%</li>
+                            <li>Online via Nuku</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Tutorials</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Weekly participation (assessed in tutorials)</li>
+                            <li>Worth 10%</li>
+                        </ul>
+                    </div>
+                </div>
                 <br>
                 <br>
             </div>
 
             <div v-cloak v-show="firstweeklink3">
-                <p>this is where the third section would go</p>
+                <h2>Critical Thinking</h2>
+                    <p><b>What does "Critical Thinking" mean?</b></p>
+                    <p>Things may not be as they seem.</p>
+                    <p>We are concerned with how society really works.</p>
+                    <p>We should subject our own thinking (and those of institutions) to regular evaluation.</p>
+                
                 <br>
+                
+                <p><b>Why is critical thinking important in academics?</b></p>
+                    <p>In academic activity, we need to be wary of common sense.</p>
+                    <p>We all carry biases.</p>
+                    <p>The best remedy is "Critical Thinking".</p>
+                    <p>Critical thinking involves thinking about what is fair.</p>
+                    <p>In this course, this is useful for generating paragraphs in your essays.</p>
+                
+                <br>
+
+                <p><b style="color: #ff7276;">You can apply a process of the following:</b></p>
+                    <p>Isolating a claim</p>
+                    <p>Looking for evidence</p>
+                    <p>Applying reason (logical thinking)</p>
+                
+                <br>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Examples of sloppy thinking</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>'I've never heard of that before, so it must not be true'</li>
+                            <li>'I don;t believe it, therefore it isn't true'</li>
+                            <li>'That's not my opinion, so it can't be right'</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p><b>These are assumptions!</b></p>
+                    <p>That is something we take for granted to be true or false without evidence.</p>
+                    <p>We often overvalue what we see, and negativity sells content.</p>
+                    <p>One example shown is through the allocation of stories towards crime and its error in representation in proportion to actual crime rates.</p>
+                <br>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>Why do we critically think?</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li><b>Too much information</b></li>
+                            <li>There is too much information in the world so we have to filter</li>
+                            <li>Our brains use techniques to cope (these are called "heuristics")</li>
+
+                            <br>
+
+                            <li><b>Cognitive Limits</b></li>
+                            <li>We don't necessarily see all that we need to make good decisions</li>
+                            <li>Our brains connect the dots as best they can</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <h2>Building Good Practices</h2>
+                    <p>One negative outcome from a lack of critical thinking is the use of stereotypes to assume ideas on an individual based on the group they come from.</p>
+                    <p>This can be seen in a positive manner, through the halo effect.</p>
+                    <p>This can also be seen in a negative manner, through the use of racism.</p>
+                
+                <br>
+
+                <p><b>We overvalue what we want to believe</b></p>
+                <p>This can extend even to the point of ignoring contrary evidence (as seen in confirmation bias).</p>
+
+                <br>
+
+                <div class="showcase-div">
+                    <div>
+                        <h3>How do we build good practices?</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Think critically</li>
+                            <li>Gather evidence</li>
+                            <li>Check for your own biases</li>
+                            <li>Assess options</li>
+                            <li>Then move to a view/decision</li>
+                            <li>Stay open to new evidence / revising your view</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>Good practices involve referencing in all stages of a researching process</p>
+                <p>Good critical thinkers spend time researching to gather information and a range of views before drawing conclusions</p>
+                <p>They have a preference for original material, and for authoritative sources such as academic publications and government reports</p>
+                <p>With the use of good practices, readers are able to check sources and replicate the work</p>
+                
+                <br>
+
+                <h2>Writing</h2>
+                <p>An essay is essentially a conversation with the reader</p>
+                <p>It starts with a claim or proposition</p>
+                <p>It backs up this claim or proposition with evidence</p>
+                <p>It is clear about the quality and weakness of the provided evidence</p>
+                <p>It draws a conclusion</p>
+
+                <br>
+                
+                <div class="showcase-div">
+                    <div>
+                        <h3>An Example of An Essay</h3>
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li>Claim - It might rain today</li>
+                            <li>Evidence - The weather report is for rain</li>
+                            <li>Evidence - Look at the black clouds above us</li>
+                            <li>Conclusion - The claim is likely correct</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p><b>Tips for Essay Writing:</b></p>
+                    <p>When writing an essay, make sure that you can follow all steps of an essay writing process</p>
+                    <p>Start with a claim or proposition</p>
+                    <p>Back it up with Evidence (carefully selected and analysed)</p>
+                    <p>Present a balanced assessment (fair and objective)</p>
+                    <p>Arrive at a reasoned conclusion</p>
+                
                 <br>
             </div>
 
@@ -466,13 +826,49 @@
             <p class="explanationtag">When you select a full week, a list of resources from that particular week will appear</p>
 
             <div v-cloak v-show="firstweekresources">
-                <br>
-                <p>This is the first week resources section</p>
+                <div>
+                    <br>
+                    <h3>Democracy in Aotearoa: A Survival Guide - Te Herenga Waka University Press</h3>
+                    <a href="https://teherengawakapress.co.nz/democracy-in-aotearoa-a-survival-guide/">https://teherengawakapress.co.nz/democracy-in-aotearoa-a-survival-guide/</a>
+                </div>
+
+                <div>
+                    <br>
+                    <h3>Democracy in Aotearoa: A Survival Guide (Alternative Link)</h3>
+                    <a href="http://www.bit.ly/FCOMeBook">http://www.bit.ly/FCOMeBook</a>
+                </div>
+
+                <div>
+                    <br>
+                    <h3>Home Page - Democracy Project</h3>
+                    <a href="https://democracyproject.nz/">https://democracyproject.nz/</a>
+                </div>
+
+                <div>
+                    <br>
+                    <h3>List of Cognitive Biases - Wikipedia</h3>
+                    <a href="https://en.wikipedia.org/wiki/Listofcognitivebiases">https://en.wikipedia.org/wiki/Listofcognitivebiases</a>
+                </div>
             </div>
 
             <div v-cloak v-show="secondweekresources">
-                <br>
-                <p>This is the second week resources section</p>
+                <div>
+                    <br>
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
+
+                <div>
+                    <br>
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
+
+                <div>
+                    <br>
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
             </div>
 
             <div v-cloak v-show="thirdweekresources">

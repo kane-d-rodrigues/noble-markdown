@@ -186,6 +186,14 @@ div {
     text-align: left;
 }
 
+.showcase-div {
+    width: 80%;
+    border: 1px solid #76fda8;
+    border-radius: 0px;
+    overflow: hidden;
+    display: inline-flex;
+}
+
 .latestpage {
     width: 75%;
     overflow: hidden;
@@ -234,6 +242,20 @@ hr {
 label {
     font-size: 17px;
     font-family: "jost";
+}
+
+li {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+b {
+    color: aqua;
+}
+
+td {
+    font-size: 15px;
+    text-align: right;
 }
 
 .footer-container {
